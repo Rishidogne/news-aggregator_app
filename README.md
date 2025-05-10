@@ -1,16 +1,47 @@
-# news_aggregator_app
+# 📰 News Aggregator App
 
-A new Flutter project.
+A Flutter-based News Aggregator App that displays top headlines and allows users to mark articles as favorites. Built with Flutter, Node.js, and MongoDB.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
 
-A few resources to get you started if this is your first Flutter project:
+- Fetch latest news articles using a backend API
+- Categorize news (e.g., business, sports, tech)
+- Mark/unmark articles as favorites
+- Save favorites in MongoDB via Node.js backend
+- View full articles in browser
+- Responsive UI and smooth UX
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## 🛠️ Tech Stack
+
+### Flutter (Frontend)
+- `http` – to fetch news data
+- `GetX` – for state management (if used)
+- `url_launcher` – to open articles
+- `shared_preferences` (optional)
+
+### Node.js (Backend)
+- Express.js – API server
+- MongoDB – database for storing favorite articles
+
+---
+
+## 🧑‍💻 How to Run
+
+### Flutter App
+```bash
+git clone https://github.com/Rishidogne/news-aggregator_app.git
+cd news-aggregator_app
+flutter pub get
+flutter run
+
+---
+
+###  APP backend
+cd backend  # if backend is in a separate folder
+npm install
+node server.js
